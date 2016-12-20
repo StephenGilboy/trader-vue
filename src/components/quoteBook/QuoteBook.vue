@@ -10,6 +10,7 @@
             <md-table-head>Ask</md-table-head>
             <md-table-head>Ask Size</md-table-head>
             <md-table-head>Last</md-table-head>
+            <md-table-head>Remove</md-table-head>
           </md-table-header>
           <md-table-body>
             <quote-row v-for="(quote, index) in quotes" :key="index" v-bind:quote="quote" v-on:unsubscribe="onUnsubscribe"></quote-row>
@@ -17,11 +18,11 @@
         </md-table>
       </md-layout>
       <md-layout md-row>
-        <md-layout md-column>
+        <md-layout md-column-small>
           <md-input-container>
             <md-input v-model="symbol" type="text" placeholder="Stock Symbol" />
           </md-input-container>
-          <md-button v-on:click="subscribe" v-bind:disabled="symbol.length === 0">Subscribe</md-button>
+          <md-button md-raised v-on:click="subscribe" v-bind:disabled="symbol.length === 0">Subscribe</md-button>
         </md-layout>
       </md-layout>
     </md-layout>
@@ -55,6 +56,7 @@
             vm.quotes.push(quote);
           }
         });
+        vm.symbol = '';
       },
       onUnsubscribe: function (quote) {
         this.quoteFeed.unsubscribe(quote.symbol);

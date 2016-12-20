@@ -7,7 +7,7 @@
     <md-table-cell>{{quote.askSize}}</md-table-cell>
     <md-table-cell>{{quote.last}}</md-table-cell>
     <md-table-cell>
-      <md-button v-on:click="notifyUnsubscribe">Unsubscribe</md-button>
+      <md-button class="md-icon-button md-raised md-warn" v-on:click="notifyUnsubscribe"><md-icon>remove</md-icon></md-button>
     </md-table-cell>
   </md-table-row>
 </template>

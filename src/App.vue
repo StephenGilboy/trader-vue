@@ -1,8 +1,14 @@
 <template>
   <div id="app">
     <md-layout md-gutter>
-      <img src="./assets/logo.png">
-      <quote-book></quote-book>
+      <md-layout md-row>
+        <md-layout md-column-xsmall>
+          <img src="./assets/logo.png">
+        </md-layout>
+        <md-layout md-column-large>
+          <quote-book></quote-book>
+        </md-layout>
+      </md-layout>
     </md-layout>
   </div>
 </template>
