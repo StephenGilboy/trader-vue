@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <md-layout md-gutter>
+      <img src="./assets/logo.png">
+      <quote-book></quote-book>
+    </md-layout>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import QuoteBook from './components/quoteBook/QuoteBook.vue'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Hello,
+    'quote-book': QuoteBook
   }
 }
 </script>
