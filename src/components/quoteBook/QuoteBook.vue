@@ -1,5 +1,5 @@
 <template>
-  <div class="tv-quote-book">
+  <div >
     <md-layout md-gutter>
       <md-layout md-row>
         <md-table>
@@ -18,11 +18,12 @@
         </md-table>
       </md-layout>
       <md-layout md-row>
-        <md-layout md-column-small>
-          <md-input-container>
-            <md-input v-model="symbol" type="text" placeholder="Stock Symbol" />
-          </md-input-container>
-          <md-button md-raised v-on:click="subscribe" v-bind:disabled="symbol.length === 0">Subscribe</md-button>
+        <md-layout md-flex-xsmall>
+            <md-input-container>
+              <md-input v-model="symbol" type="text" placeholder="Stock Symbol" />
+            </md-input-container>
+            <md-button v-show="!loadingQuote" md-raised v-on:click="subscribe" v-bind:disabled="symbol.length === 0">Subscribe</md-button>
+            <md-spinner md-indeterminate v-show="loadingQuote"></md-spinner>
         </md-layout>
       </md-layout>
     </md-layout>
@@ -42,12 +43,14 @@
       return {
         quotes: [],
         symbol: '',
-        quoteFeed: null
+        quoteFeed: null,
+        loadingQuote: false
       }
     },
     methods: {
       subscribe: function () {
         let vm = this;
+        vm.loadingQuote = true;
         vm.quoteFeed.subscribe(vm.symbol, (quote) => {
           let exists = vm.quotes.filter((q) => q.equals(quote));
           if (exists.length) {
@@ -55,7 +58,8 @@
           } else {
             vm.quotes.push(quote);
           }
-        });
+          vm.loadingQuote = false;
+        }, () => { vm.loadingQuote = false; });
         vm.symbol = '';
       },
       onUnsubscribe: function (quote) {

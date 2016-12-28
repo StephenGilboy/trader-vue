@@ -41,8 +41,8 @@ function QuoteFeed (feedUri) {
     unsubscribe (symbol) {
       let sub = self.subscribers.filter((s) => s.equals(symbol));
       if (sub.length) {
-        self.socket.emit('unsubscribe', sub.symbol);
-        self.subscribers.splice(self.subscribers.indexOf(sub), 1);
+        self.socket.emit('unsubscribe', sub[0].symbol);
+        self.subscribers.splice(self.subscribers.indexOf(sub[0]), 1);
       }
     }
   }

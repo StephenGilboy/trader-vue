@@ -1,16 +1,16 @@
 <template>
-  <div id="app">
-    <md-layout md-gutter>
+    <md-layout md-gutter="8">
       <md-layout md-row>
-        <md-layout md-column-xsmall>
+        <md-layout md-flex-xsmall>
           <img src="./assets/logo.png">
         </md-layout>
-        <md-layout md-column-large>
+      </md-layout>
+      <md-layout md-row>
+        <md-layout md-flex-large>
           <quote-book></quote-book>
         </md-layout>
       </md-layout>
     </md-layout>
-  </div>
 </template>
 
 <script>
