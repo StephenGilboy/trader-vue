@@ -62,9 +62,9 @@
 </script>
 <style>
   .move-up {
-    color: green;
+    color: #009688;
   }
   .move-down {
-    color: red;
+    color: #e91e63;
   }
 </style>
