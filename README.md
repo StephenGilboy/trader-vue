@@ -1,7 +1,8 @@
 # trader-vue
 
 > A simple trading platform to learn Rx and Functional programming with VueJS
-> [Try it out](http://trader.gilboy.io)gi
+
+[Try it out](http://trader.gilboy.io)
 
 ## Build Setup
 

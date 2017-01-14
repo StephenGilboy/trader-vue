@@ -4,8 +4,6 @@
     <list default="true" id="3b6dc7c2-e346-43e6-9b3a-a182790f156a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/quoteBook/Quote.vue" afterPath="$PROJECT_DIR$/src/components/quoteBook/Quote.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -113,8 +111,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -172,8 +170,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="182" />
+    <option name="x" value="178" />
+    <option name="y" value="129" />
     <option name="width" value="1428" />
     <option name="height" value="779" />
   </component>
@@ -331,15 +329,15 @@
       <workItem from="1482305112689" duration="2067000" />
       <workItem from="1482903700539" duration="2665000" />
       <workItem from="1483763572799" duration="1930000" />
-      <workItem from="1484415086457" duration="7115000" />
+      <workItem from="1484415086457" duration="7191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23678000" />
+    <option name="totallyTimeSpent" value="23754000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="182" width="1428" height="779" extended-state="0" />
+    <frame x="178" y="129" width="1428" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29481792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -785,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
