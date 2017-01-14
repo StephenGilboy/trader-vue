@@ -1,16 +1,14 @@
 <template>
-    <md-layout md-gutter="8">
-      <md-layout md-row>
-        <md-layout md-flex-xsmall>
+    <div class="container">
+      <div class="row">
+        <div class="column columnn-20">
           <img src="./assets/logo.png">
-        </md-layout>
-      </md-layout>
-      <md-layout md-row>
-        <md-layout md-flex-large>
+        </div>
+        <div class="column">
           <quote-book></quote-book>
-        </md-layout>
-      </md-layout>
-    </md-layout>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>

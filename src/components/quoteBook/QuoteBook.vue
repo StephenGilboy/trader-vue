@@ -1,7 +1,7 @@
 <template>
-  <div >
-    <md-layout md-gutter>
-      <md-layout md-row>
+  <section>
+    <div class="row">
+      <div class="column">
         <md-table>
           <md-table-header>
             <md-table-head>Symbol</md-table-head>
@@ -16,19 +16,20 @@
             <quote-row v-for="(quote, index) in quotes" :key="index" v-bind:quote="quote" v-on:unsubscribe="onUnsubscribe"></quote-row>
           </md-table-body>
         </md-table>
-      </md-layout>
-      <md-layout md-row>
-        <md-layout md-flex-xsmall>
-            <md-input-container>
-              <md-input v-model="symbol" type="text" placeholder="Stock Symbol" />
-            </md-input-container>
-            <md-button v-show="!loadingQuote" md-raised v-on:click="subscribe" v-bind:disabled="symbol.length === 0">Subscribe</md-button>
-            <md-spinner md-indeterminate v-show="loadingQuote"></md-spinner>
-        </md-layout>
-      </md-layout>
-    </md-layout>
-  </div>
-
+      </div>
+    </div>
+    <div class="row">
+      <div class="column column-20">
+        <md-input-container>
+          <md-input v-model="symbol" type="text" placeholder="Stock Symbol" />
+        </md-input-container>
+      </div>
+      <div class="column column-10">
+        <md-button v-show="!loadingQuote" md-raised v-on:click="subscribe" v-bind:disabled="symbol.length === 0">Subscribe</md-button>
+        <md-spinner md-indeterminate v-show="loadingQuote"></md-spinner>
+      </div>
+    </div>
+  </section>
 </template>
 <script>
   import QuoteRow from './quote.vue'
